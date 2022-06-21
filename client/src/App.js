@@ -6,7 +6,7 @@ import Posts from './components/Posts/Posts';
 import Form from './components/Form/Form';
 import lac from './images/lac.jpg'
 import useStyles from './style';
-import { getPosts } from './actions/posts';
+import { getPosts } from './actions/posts.js';
 
 const App = () => {
   const [currentId, setCurrentId] = useState(0);
