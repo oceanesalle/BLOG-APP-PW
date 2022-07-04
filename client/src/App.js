@@ -2,11 +2,12 @@ import React, { useState, useEffect } from 'react'
 import { Container, AppBar, Typography, Grow, Grid } from '@material-ui/core';
 import { useDispatch } from 'react-redux';
 
+import { getPosts } from './actions/posts.js';
 import Posts from './components/Posts/Posts';
 import Form from './components/Form/Form';
 import lac from './images/lac.jpg'
 import useStyles from './style';
-import { getPosts } from './actions/posts.js';
+
 
 const App = () => {
   const [currentId, setCurrentId] = useState(0);
